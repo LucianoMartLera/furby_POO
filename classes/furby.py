@@ -1,7 +1,7 @@
-import Robot from robot
+from robot import Robot 
 
 class Furby(Robot):
-    def __init__(self, pelo, color_ojos, pico):
+    def __init__(self, nombre, color, energia, pelo, color_ojos, pico):
         super().__init__(nombre, color, energia)
 
         self._pelo = pelo
