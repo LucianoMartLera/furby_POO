@@ -1,9 +1,9 @@
 class Sensor:
-    def __init__(self,alcanze,sensibilidad,presicion):
-        self._alcanze=alcanze
-        self._sensibilidad=sensibilidad
-        self._presicion=presicion
+    def __init__(self, alcance: int, sensibilidad: str, presicion: str):
+        self._alcance = alcance
+        self._sensibilidad = sensibilidad
+        self._presicion = presicion
 
     def escaneo(self):
-        return f"el sensor escanea {self._alcanze}mt de frente"
+        return f"El sensor escanea {self._alcance}mt de frente"
         
