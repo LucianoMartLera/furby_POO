@@ -15,8 +15,11 @@ class Furby(Robot):
         self._sensor = Sensor(10, "Alta", "Alta")
 
     def modo_satanico(self) -> str:
-        message = f"{self._nombre} activó su modo satánico, sus ojos pasaron de {self._color_ojos} a rojos"
-        self._color_ojos = "rojo"
+        if self._encendido:
+            message = f"{self._nombre} activó su modo satánico, sus ojos pasaron de {self._color_ojos} a rojos"
+            self._color_ojos = "rojos"
+        else:
+            message = f"{self._nombre} está apagado, por favor enciéndalo para activar el modo satánico."
         return message
 
     def info_bateria(self) -> str:

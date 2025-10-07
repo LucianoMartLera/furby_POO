@@ -1,4 +1,4 @@
-from furby import Furby
+from .furby import Furby
 
 class Furby_Madre(Furby):
     def __init__(self, nombre: str, color: str, energia: int, pelo: str, color_ojos: str, pico: str, luchona: bool) -> None:

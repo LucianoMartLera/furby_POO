@@ -7,7 +7,7 @@ class Bateria:
     def __str__(self) -> str:
         return f"""
         Descripción de la batería:
-            • Carga actual: {self._carga}
+            • Carga actual: {self._carga}%
             • Duración aproximada: {self._duracion}
             • Voltaje: {self._voltaje}
         """
